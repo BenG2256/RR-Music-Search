@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 function ArtistView() {
   const [artistData, setArtistData] = useState([]);
 
-  const { id } = useParams;
+  const { id } = useParams()
   return (
     <div>
       <p>Artist Data Goes Here!</p>

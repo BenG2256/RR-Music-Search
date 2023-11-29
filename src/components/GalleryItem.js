@@ -37,7 +37,7 @@ function GalleryItem({ item }){
             <div style={detailStyle}>
                 <h2>{item.trackName}</h2>
                 <h3>
-                    <Link to={`/artist/${item.artistID}`}>
+                    <Link to={`/artist/${item.artistId}`}>
                          {item.artistName}
                     </Link>
                 </h3>

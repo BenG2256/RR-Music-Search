@@ -1,16 +1,12 @@
 // Gallery.js
-import { useContext } from 'react'
-
 import GalleryItem from './GalleryItem'
 
-function Gallery(){
-    const data = useContext()
-    
-    const display = data.map((item,index) => {
-        return (
-            <GalleryItem item={item} key={index} />
-        )
+function Gallery({ data }){
+
+    const display = data.map(item => {
+        return  <GalleryItem key={item.trackId} item={item} />
     })
+    
     return (
         <div>
             {display}
