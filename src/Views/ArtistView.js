@@ -2,6 +2,7 @@
 // component to serve specific data about our artist
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import NavButtons from './NavButtons.js';
 
 function ArtistView() {
   const [artistData, setArtistData] = useState([]);
@@ -36,9 +37,11 @@ function ArtistView() {
 
   return (
     <div>
+      <NavButtons />
       <p>Artist Data Goes Here!</p>
       <p> ID: {id}</p>
       <p>{albumDisplay}</p>
+     
     </div>
   );
 }
